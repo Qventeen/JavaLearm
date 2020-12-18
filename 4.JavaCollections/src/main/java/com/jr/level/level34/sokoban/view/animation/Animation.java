@@ -10,7 +10,7 @@ import static java.lang.Integer.max;
 import static java.lang.Integer.min;
 
 public class Animation {
-    private static int speed = Integer.parseInt(RManager.getResSettings().getString("speed"));
+    private static int speed = Integer.parseInt(RManager.getPropSetting("speed"));
 
     private MoveStep moveStep;
     private Direction direction;

@@ -30,7 +30,7 @@ public class View extends JFrame implements ActionListener {
         field = new Field(this);
         add(field);
         getGameObjects();
-        timer = new Timer(1000 / Integer.parseInt(RManager.getResSettings().getString("fsp")), this);
+        timer = new Timer(1000 / Integer.parseInt(RManager.getPropSetting("fsp")), this);
     }
 
     public void setEventListener(EventListener eventListener){

@@ -4,7 +4,7 @@ package com.jr.level.level34.sokoban.model;
 import com.jr.level.level34.sokoban.utils.RManager;
 
 public abstract class GameObject {
-    public static final int FIELD_SELL_SIZE = Integer.parseInt(RManager.getResSettings().getString("cell.length"));
+    public static final int FIELD_SELL_SIZE = Integer.parseInt(RManager.getPropSetting("cell.length"));
     protected Direction direction = Direction.NONE;
 
     private int x, y, width, height;

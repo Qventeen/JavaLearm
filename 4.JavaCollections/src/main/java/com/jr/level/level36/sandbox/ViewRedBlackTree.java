@@ -2,12 +2,12 @@ package com.jr.level.level36.sandbox;
 
 import com.jr.level.level36.task3604.RedBlackTree;
 import com.jr.level.level36.sandbox.utils.ReflectUtils;
-import com.sun.istack.internal.NotNull;
 
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
+
 import org.graphstream.graph.Graph;
 import org.graphstream.graph.Node;
 import org.graphstream.graph.implementations.MultiGraph;
@@ -118,7 +118,7 @@ public class ViewRedBlackTree {
         private NodeWrapper left;
         private NodeWrapper right;
 
-        public NodeWrapper(@NotNull RedBlackTree.Node node){
+        public NodeWrapper(RedBlackTree.Node node){
             this.node = node;
         }
 
@@ -149,7 +149,7 @@ public class ViewRedBlackTree {
         public NodeWrapper getParent() {
             return parent;
         }
-        public void setParent(@NotNull NodeWrapper parent) {
+        public void setParent(NodeWrapper parent) {
             this.parent = parent;
         }
     }

@@ -2,8 +2,13 @@ package com.jr.level.level34.sokoban.model;
 
 import com.jr.level.level34.sokoban.controller.EventListener;
 import com.jr.level.level34.sokoban.utils.RManager;
+import org.apache.http.client.utils.URLEncodedUtils;
+
+import java.io.IOException;
 import java.net.URISyntaxException;
+import java.net.URL;
 import java.nio.file.Paths;
+import java.util.Enumeration;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -22,7 +27,7 @@ public class Model  {
     public Model() {
         try {
             levelLoader = new LevelLoader(Paths.get(
-                    getClass().getResource(RManager.getResGame().getString("levels")).toURI()));
+                    getClass().getResource(RManager.getPropGame("levels")).toURI()));
         } catch (URISyntaxException e) {
             e.printStackTrace();
         }

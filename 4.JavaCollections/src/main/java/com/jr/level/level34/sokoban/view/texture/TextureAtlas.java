@@ -16,7 +16,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 @XmlAccessorType(XmlAccessType.FIELD)
 public class TextureAtlas {
     private static TextureAtlas instance;
-    private static String atlasName = RManager.getResGame().getString("textures.atlas");
+    private static String atlasName = RManager.getPropGame("textures.atlas");
     @XmlAttribute
     private String imagePath;
     @XmlElement(name = "SubTexture")

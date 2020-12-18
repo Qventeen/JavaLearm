@@ -1,6 +1,7 @@
 package com.jr.level.level34.sokoban.view.animation;
 
 import com.jr.level.level34.sokoban.model.Direction;
+import com.jr.level.level34.sokoban.utils.RManager;
 import com.jr.level.level34.sokoban.view.texture.SubTexture;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -18,19 +19,19 @@ public class PlayerMoveStep extends BaseMoveStep {
         map.put(Direction.LEFT, new ArrayList<>());
         map.put(Direction.RIGHT, new ArrayList<>());
 
-        map.get(Direction.UP).add((SubTexture) resTextures.getObject(resCharacter.getString("up")));
-        map.get(Direction.UP).add((SubTexture) resTextures.getObject(resCharacter.getString("up.rstep")));
-        map.get(Direction.UP).add((SubTexture) resTextures.getObject(resCharacter.getString("up.lstep")));
+        map.get(Direction.UP).add(RManager.getSubTexture(RManager.getPropPlayer("up")));
+        map.get(Direction.UP).add(RManager.getSubTexture(RManager.getPropPlayer("up.rstep")));
+        map.get(Direction.UP).add(RManager.getSubTexture(RManager.getPropPlayer("up.lstep")));
 
-        map.get(Direction.DOWN).add((SubTexture) resTextures.getObject(resCharacter.getString("down")));
-        map.get(Direction.DOWN).add((SubTexture) resTextures.getObject(resCharacter.getString("down.lstep")));
-        map.get(Direction.DOWN).add((SubTexture) resTextures.getObject(resCharacter.getString("down.rstep")));
+        map.get(Direction.DOWN).add(RManager.getSubTexture(RManager.getPropPlayer("down")));
+        map.get(Direction.DOWN).add(RManager.getSubTexture(RManager.getPropPlayer("down.lstep")));
+        map.get(Direction.DOWN).add(RManager.getSubTexture(RManager.getPropPlayer("down.rstep")));
 
-        map.get(Direction.LEFT).add((SubTexture) resTextures.getObject(resCharacter.getString("left")));
-        map.get(Direction.LEFT).add((SubTexture) resTextures.getObject(resCharacter.getString("left.step")));
+        map.get(Direction.LEFT).add(RManager.getSubTexture(RManager.getPropPlayer("left")));
+        map.get(Direction.LEFT).add(RManager.getSubTexture(RManager.getPropPlayer("left.step")));
 
-        map.get(Direction.RIGHT).add((SubTexture) resTextures.getObject(resCharacter.getString("right")));
-        map.get(Direction.RIGHT).add((SubTexture) resTextures.getObject(resCharacter.getString("right.step")));
+        map.get(Direction.RIGHT).add(RManager.getSubTexture(RManager.getPropPlayer("right")));
+        map.get(Direction.RIGHT).add(RManager.getSubTexture(RManager.getPropPlayer("right.step")));
     }
 
     private Direction lastDirection = Direction.DOWN;

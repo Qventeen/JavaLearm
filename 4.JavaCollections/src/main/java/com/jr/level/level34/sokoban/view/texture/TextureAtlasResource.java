@@ -7,10 +7,10 @@ import java.util.Objects;
 import java.util.ResourceBundle;
 import java.util.stream.Collectors;
 
-public class TextureAtlasResourceBundle extends ResourceBundle {
+public class TextureAtlasResource {
     private Map<String, SubTexture> elements;
 
-    public TextureAtlasResourceBundle(TextureAtlas atlas) {
+    public TextureAtlasResource(TextureAtlas atlas) {
         Objects.nonNull(atlas);
         init(atlas);
     }
@@ -19,14 +19,10 @@ public class TextureAtlasResourceBundle extends ResourceBundle {
         elements = atlas.getSubTextures().stream().collect(Collectors.toMap(SubTexture::getName, e -> e ));
     }
 
-    @Override
-    protected Object handleGetObject(String key) {
+
+    public SubTexture getSubTexture(String key) {
         return elements.get(key);
     }
 
-    @Override
-    public Enumeration<String> getKeys() {
-        return Collections.enumeration(elements.keySet());
-    }
 }
 

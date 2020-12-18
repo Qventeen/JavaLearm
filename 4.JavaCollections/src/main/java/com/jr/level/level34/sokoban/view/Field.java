@@ -35,7 +35,7 @@ public class Field extends JPanel {
 
     public Field(View view) {
         this.view = view;
-        URL name = getClass().getResource(RManager.getResGame().getString("textures.image"));
+        URL name = getClass().getResource(RManager.getPropGame("textures.image"));
         Image tmpImage = null;
         try {
             tmpImage = ImageIO.read(name);
