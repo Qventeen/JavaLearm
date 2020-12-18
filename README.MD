@@ -8,7 +8,7 @@ Additional information about this course you can see here https://javarush.ru.
 #### 3. Java Multithreading
 #### 4. Java Collections
 
-##Table of Contents
+## Table of Contents
 ### 1. Java Syntax
 - **Level 1**  Familiarity with Java: Displaying, String and Int types
 - **Level 2** Familiarity with Java: variables, methods, classes
