@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="bonus" elementFormDefault="qualified">
+    <complexType name="owner">
+        <all>
+            <element name="telephone" type="string"/>
+        </all>
+        <attribute name="name" type="string"/>
+    </complexType>
+</schema>

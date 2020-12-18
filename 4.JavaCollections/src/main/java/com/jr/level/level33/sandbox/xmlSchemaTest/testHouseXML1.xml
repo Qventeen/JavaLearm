@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<qv:house xmlns:qv="http://www.qventeen.com/"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.qventeen.com/ testHouseXSD1.xsd">
+
+    <qv:address>ул. Есенина, дом №5</qv:address>
+    <qv:owner name="Ivan">
+        <qv:telephone>+38-094-521-77-35</qv:telephone>
+    </qv:owner>
+</qv:house>

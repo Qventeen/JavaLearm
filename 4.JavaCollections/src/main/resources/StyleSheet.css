@@ -1,0 +1,42 @@
+graph {
+    fill-color: #eae6dd, #e7ddc0;
+    fill-mode: gradient-horizontal;
+}
+
+node {
+    shape: circle;
+    fill-color: #a5e789, #7bd455;
+    fill-mode: gradient-horizontal;
+    size: 40px;
+    stroke-mode: plain;
+    stroke-width: 3px;
+    stroke-color: #459318;
+
+    text-mode: truncated;
+    text-size: 25px;
+    text-style: bold;
+    text-color: #30375e;
+    text-alignment: center;
+    text-offset: 0px, -5px;
+
+}
+
+
+node.RED {
+    fill-color: #e7a8a8, #e86262;
+    stroke-color: #bd3838;
+}
+
+node.HEAD {
+    fill-color: #ac6ad2;
+    stroke-color: #684fe7;
+
+}
+
+edge {
+    size: 2px;
+    fill-color: #8e8b8b;
+    arrow-size: 7px;
+    stroke-mode: plain;
+
+}

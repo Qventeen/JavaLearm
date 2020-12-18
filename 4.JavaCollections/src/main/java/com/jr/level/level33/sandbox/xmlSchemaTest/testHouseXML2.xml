@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<house  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="testHouseXSD2.xsd">
+    <address>ул. Есенина, дом №5</address>
+    <owner name="Ivan">
+        <telephone>+38-094-521-77-35</telephone>
+    </owner>
+</house>

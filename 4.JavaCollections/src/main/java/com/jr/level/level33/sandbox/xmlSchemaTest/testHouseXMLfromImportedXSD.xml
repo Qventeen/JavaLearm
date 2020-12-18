@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<m:house xmlns:m="main" xmlns:b="bonus" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="main testMainHouseXSD.xsd">
+    <m:adress>Урловская 23в квартира 189</m:adress>
+    <m:owner>
+        <b:telephone>Василенко Р.М.</b:telephone>
+    </m:owner>
+</m:house>
